@@ -18,8 +18,7 @@ function preload() {
   R1 = loadImage("WalkingKris/Right_1.png")
   D = loadImage("WalkingKris/Down.png")
   D1 = loadImage("WalkingKris/Down_1.png")
- 
-
+  KF = loadImage("Ui/background.png")
 }
 
 
@@ -237,9 +236,19 @@ setTimeout(()=>{GameState = 3
 if(GameState == 3){
   background(0)
 
-  
-    rect(75,325,100,75)
-text("Return",100,363)
+  //fill(255,255,255)
+   // rect(75,325,80,50)
+
+//    fill(185,146,225)
+ //   rect(75,325,3,50)
+  //  rect(155,325,3,50)
+  //  rect(75,325,80,3)
+   // rect(75,375,80,3)
+   // fill(0,0,0)
+   image(KF,75,325)
+   fill(255,255,255)
+   //du kan lave et check om musen er indenfor området hvor teksten er og så mouseclicked event.
+text("Return",130,370)
 
 if(keyCode===71){
   GameState = 2
